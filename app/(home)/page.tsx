@@ -5,7 +5,7 @@ export const metadata = {
     title: 'home'
 }
 
-export const URL = 'https://nomad-movies.nomadcoders.workers.dev/movies';
+const URL = 'https://nomad-movies.nomadcoders.workers.dev/movies';
 
 async function getMovies() {
     const response = await fetch(URL);

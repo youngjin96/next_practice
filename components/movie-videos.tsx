@@ -1,8 +1,8 @@
-import { URL } from "../app/(home)/page";
+
 import styles from '../styles/movie-videos.module.css';
 
 async function getVideos(id: string) {
-    const response = await fetch(`${URL}/${id}/videos`);
+    const response = await fetch(`https://nomad-movies.nomadcoders.workers.dev/movies/${id}/videos`);
     return await response.json();
 }
 

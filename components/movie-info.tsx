@@ -1,8 +1,8 @@
-import { URL } from "../app/(home)/page";
+
 import styles from '../styles/movie-info.module.css';
 
 export async function getMovie(id: string) {
-    const response = await fetch(`${URL}/${id}`);
+    const response = await fetch(`https://nomad-movies.nomadcoders.workers.dev/movies/${id}`);
     return await response.json();
 }
 
